@@ -1,0 +1,432 @@
+/* ===========================================================
+Template Name: STRICT || HTML Responsive Template;
+Authore: Md.Sobuj Sarkar;
+Version: 1.0.0;
+Created: 25  February 2021;
+File Description: Main CSS file of the template;
+============================================================== */
+
+/* ===========================================================
+              Variables
+============================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+:root{
+    --primary:#2d3950;
+    --secondary:#15a4fa;
+    --text:#999999;
+    --acent:#15a4fa;
+    --white:#ffffff;
+    --primary_fonts: 'Lato', sans-serif;
+    --title_font_size:40px;
+    --subtitle_font_size:22px;
+    --text_font_size:20px;
+    --Anchor_font_size:16px;
+}
+body{
+    font-family: var(--primary_fonts);
+    font-size: var(--text_font_size)!important;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+h1,
+h2,h3,
+h4,h5,h6{
+    font-family: var(--primary_fonts);
+    color: var(--primary);
+}
+h1{
+    font-size: 120px;
+    line-height: 130px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+h2{
+    font-size: var(--title_font_size);
+    line-height: 50px;
+    font-weight: 400;
+}
+h2{
+    font-size: var(--subtitle_font_size);
+    line-height: 30px;
+    font-weight: 400;
+}
+p{
+    font-family: var(--primary_fonts);
+    font-size: var(--text_font_size);
+    color: var(--text);
+    line-height: 30px;
+    font-weight: 400;
+}
+a{
+    font-family: var(--primary_fonts);
+    font-size: var(--Anchor_font_size);
+    color: var(--text);
+    line-height: 20px;
+    font-weight: 700;  
+}
+a:hover{
+    color: var(--acent);
+}
+button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+/* ===========================================================
+                  Header Style Start Here
+============================================================== */
+.navbar{
+    padding: 30px 0px;
+}
+/* .fixed-top {
+    position: sticky;
+} */
+.nav-link{
+    font-family: var(--primary_fonts);
+    color: var(--primary)!important;
+    text-transform: uppercase;
+    padding: 0px 25px !important;
+    transition: .3s;
+}
+.nav-link:hover{
+    color: var(--acent)!important;
+    transition: .3s;
+   
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--acent)!important;
+}
+.navbar-light .navbar-toggler {
+    color:var(--primary);
+    border-color:var(--primary)!important;
+    border: 2px solid ;
+}
+.navbar-toggler:hover{
+    color: var(--acent)!important;
+}
+.navbar-toggler{
+    padding: 5px 10px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+    border-color: var(--acent)!important;
+}
+/* ===========================================================
+                  Carousel Style Start Here
+============================================================== */
+.carousel-caption{
+    right: 0px;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.carousel-title{
+    position: relative;
+}
+.carousel-title span::after{
+   content: "";
+   position: absolute;
+   width: 80%;
+   height: 2px;
+   background-color: var(--secondary);
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+.carousel-caption p{
+    margin-top: 30px;
+    color: var(--white);
+}
+.carousel-caption button{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+.carousel-caption button::after{
+    content:'';
+    position: absolute;
+    background-color:var(--acent);
+    height:0;
+    width:100%;
+    top: 0;
+    left:0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .6s;
+    color: var(--primary);
+}
+
+.carousel-caption button:hover:after{
+   height: 100%;
+   border: 1px solid var(--acent);
+   transition: .4s;
+}
+.carousel-indicators [data-bs-target] {
+    background-color:var(--secondary);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+/* ===========================================================
+                  About Style Start Here
+============================================================== */
+#about{
+    padding: 80px 0px 80px;
+    background-color:#f6f9f9;
+}
+.about-content h2{
+    font-family: var(--primary_fonts);
+    font-size: var(--title_font_size);
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.about-content p{
+    font-family: var(--primary_fonts);
+    font-size: var(--text_font_size);
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--text);
+    padding-top: 10px;
+}
+/* ===========================================================
+                  Service Style Start Here
+============================================================== */
+#service{
+    padding:80px 0px;
+}
+.service-item .icon i{
+    font-size: 30px;
+    color: var(--white);
+}
+.service-item .icon i{
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 2px;
+    cursor: pointer;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #48baff 50%, #5fc3ff 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #48baff 50%,#5fc3ff 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #48baff 50%,#5fc3ff 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+}
+.service-item h4{
+    font-family: var(--primary_fonts);
+    font-size: var(--subtitle_font_size);
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--primary);
+    padding: 15px 0px 18px;
+}
+.service-item p{
+    font-family: var(--primary_fonts);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--text);
+}
+/* ===========================================================
+                  Gallery Style Start Here
+============================================================== */
+#gallery{
+    padding: 80px 0px;
+    background-color: #f6f9f9;
+}
+.heading h2{
+    font-family: var(--primary_fonts);
+    font-size: var(--title_font_size);
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--primary);
+}
+.heading p{
+    font-family: var(--primary_fonts);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color:#909090;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.gallery-images img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery-item{
+    position: relative;
+    margin: 15px 0px;
+    
+}
+.gallery-item::before{
+    content: "";
+    position: absolute;
+    background-color:var(--acent);
+    height: 0;
+    width: 100%;
+    display: block;
+    opacity: 0;
+    transition: .6s;
+}
+.gallery-item:hover::before{
+    height: 100%;
+    cursor: pointer;
+    opacity: .8;
+  
+}
+.gallery-item:hover .gallery-icon{
+     top: 50%;
+     opacity: 1;
+}
+.gallery-icon{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .8s;
+}
+.gallery-icon .list-inline{
+    margin-bottom: 0px;
+}
+.gallery-icon a{
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 3px;
+    display: block;
+}
+/* ===========================================================
+                  Contact Style Start Here
+============================================================== */
+#contact{
+    padding: 80px 0px 80px;
+    background-image:url(../images/Newsletter-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:#2d3950eb !important;
+    top: 0;
+    z-index: -1;
+}
+.contact-heading .heading h2{
+    color: var(--white);
+}
+.contact-heading .heading p{
+    color: var(--text);
+    padding-bottom: 50px;
+}
+#contact-form .placeholder{
+    font-size: 15px;
+    color: var(--text);
+}
+.form-control{
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid var(--text);
+    padding: 25px 20px;
+    color: var(--acent) !important;
+}
+.form-control:focus{
+    background-color: transparent;
+    border: 1px solid var(--acent);
+    box-shadow:  none !important;
+    transition: .3s ease-in-out;
+}
+.form-footer label{
+    font-size: 15px;
+    color:var(--white);
+}
+.form-footer button{
+    font-size: 18px;
+    color: var(--white);
+    padding: 15px 60px;
+    border: 1px solid var(--acent);
+    border-radius: 3px;
+    background-color: transparent;
+}
+.form-footer button:hover{
+    background-color: var(--acent);
+}
+.form-footer button:focus{
+    background-color: transparent;
+    border: 1px solid var(--acent);
+    border-radius: 3px;
+    box-shadow: none;
+}
+.btn-primary:focus{
+    border-color: none;
+}
+.mt-2 {
+    margin-top: .8rem!important;
+}
+
+/* ===========================================================
+                  Footer Style Start Here
+============================================================== */
+#footer{
+    background-color:#f6f9f9;
+    padding: 25px 0px;
+}
+.social-content p{
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 0;
+}
+.social-content p a{
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--acent);
+ 
+}
+.social-icon .nav li a{
+    font-size: 15px;
+    height: 40px;
+    width: 40px;
+    margin: 0px 6px;
+    line-height: 40px;
+    color: var(--white);
+    background-color: var(--acent);
+    border: 1px solid var(--acent);
+    border-radius: 5px 0px 5px 0px;
+    display: block;
+    text-align: center;
+
+}
+.social-icon .nav li a:hover{
+   background-color: transparent;
+   color: var(--acent);
+   border-radius: 0px 5px 0px 5px;
+   transition: .5s ease-in;
+}
+.social-icon .nav li:last-child a{
+    margin-right: 0;
+}

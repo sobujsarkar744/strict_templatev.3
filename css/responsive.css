@@ -1,0 +1,259 @@
+
+
+
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) { 
+
+/* Navber Start Here  */
+.navbar-nav {
+      align-items: center;
+}
+.nav-link{
+      padding: 15px 40px!important;
+}
+/* Navber End Here */
+
+/* Carousel Style Start Here */
+.carousel-caption{
+      width: 70%;
+}
+.carousel-title h1{
+      font-size: 35px;
+      line-height: 45px;
+}
+.carousel-caption p {
+      margin-top: 0;
+      font-size: 13px;
+      line-height: 23px;
+      font-weight: 400;
+}
+.carousel-title span::after{
+      width: 100%;
+}
+.carousel-caption button {
+     font-size: 10px;
+     padding: 0px 5px !important;
+     margin-top: -35px;
+}
+.carousel-indicators, .carousel-control-prev, .carousel-control-next{
+  display: none;
+}
+/* Carousel Style End Here */
+
+/* About-content Start Here */
+#about{
+      padding: 60px 0px;
+}
+.about-content h2{
+  font-size: 30px; 
+}
+.about-content p{
+  padding-top: 0;    
+  font-size: 15px;
+}
+/* About-content End Here */
+
+/* Service Start Here */
+.service-item h4 {
+      padding: 10px 0px 10px;
+  }
+
+.service-item p {
+      padding:0px;
+      }
+/* Service End Here */
+
+/* Gallery Start Here */
+.heading h2 {
+      line-height: 40px;
+      font-size: 30px;
+  }
+/* Gallery End Here */
+
+/* Contact Start Here */
+.form-footer button {
+      padding: 13px 50px;}
+/* Contact End Here */
+
+/* Footer Start Here */
+.social-content p {
+      font-size: 14px;
+      text-align: center;
+  }
+.justify-content-end{
+     margin-top: 20px;
+     justify-content: center !important;
+  }
+/* Footer End Here */
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+/* Navber Start Here  */
+.navbar-nav {
+      align-items: center;
+}
+.nav-link{
+      padding: 15px 40px!important;
+}
+
+/* Navber End Here  */
+
+/* Carousel Style Start Here */
+.carousel-caption{
+      width: 80%;
+}
+.carousel-title h1{
+      font-size: 80px;
+      line-height: 90px;
+}
+.carousel-caption p {
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 400;
+}
+.carousel-title span::after{
+      width: 80%;
+}
+.carousel-caption button {
+      font-size: 10px;
+      padding: 5px 15px;
+      margin-top: 0px;
+}
+.carousel-indicators, .carousel-control-prev, .carousel-control-next{
+      display: none;
+}
+/* Carousel Style End Here */
+
+/* About Style Start Here */
+.about-content h2 {
+      margin-bottom: 10;}
+/* About Style End Here */
+
+/* Service Start Here */
+.service-item h4 {
+      padding: 10px 0px 15px;
+  }
+.service-item p {
+      padding:0px 50px;
+      }
+/* Service End Here */
+
+/* Gallery Start Here */
+.heading h2 {
+      line-height: 45px;
+      font-size: 35px;
+  }
+/* Gallery End Here */
+
+
+
+/* Footer Start Here */
+.social-content p {
+      text-align: center;
+  }
+.justify-content-end{
+     margin-top: 20px;
+     justify-content: center !important;
+  }
+/* Footer End Here */
+
+
+}
+ 
+/* Medium devices (tablets, less than 992px) */
+@media  (min-width: 768px) and (max-width: 991.98px) { 
+
+/* Navber Start Here  */
+.navbar-nav {
+      align-items: center;
+}
+.nav-link{
+      padding: 15px 40px!important;
+}
+/* Navber End Here  */
+
+/* Carousel Style Start Here */
+.carousel-caption{
+        width: 70%;
+}
+.carousel-title h1{
+        font-size: 90px;
+        line-height: 100px;
+}
+.carousel-caption p {
+        margin-top: 15px;
+}
+.carousel-title span::after{
+        width: 80%;
+}
+.carousel-caption button {
+       font-size: 14px;
+       padding: 10px 15px;
+       margin-top: 0px;
+}
+.carousel-indicators{
+      display: none;
+}
+/* Carousel Style End Here */
+
+/* Service Start Here */
+.service-item h4 {
+      line-height: 30px;
+      font-size: 20px;
+}
+.service-item p {
+      font-size: 12px;
+      line-height: 22px;
+  }
+.service-item p {
+      padding:0px;
+      }
+/* Service End Here */
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   
+/* Carousel Style Start Here */
+.carousel-caption{
+      width: 60%;
+}
+.carousel-title h1{
+      font-size: 100px;
+      line-height: 110px;
+}
+.carousel-caption p {
+      margin-top: 20px;
+}
+.carousel-title span::after{
+      width: 100%;
+}
+.carousel-caption button {
+      font-size: 14px;
+      padding: 12px 20px;
+      margin-top: 10px;
+}
+/* Carousel Style End Here */
+
+/* Service Start Here */
+.service-item p {
+      padding:0px;
+      }
+/* Service End Here */
+
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+
+}
+
+ 
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
